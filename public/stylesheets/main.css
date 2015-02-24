@@ -1,0 +1,8 @@
+body {
+    font-family: monospace;
+}
+
+#google-map {
+    height: 500px;
+    width: 500px;
+}

@@ -3,6 +3,7 @@ $(runApp);
 function runApp() {
 
     getLocation(locationCallback);
+    testMap();
 }
 
 function locationCallback(location) {
@@ -19,4 +20,13 @@ function getLocation(callBack) {
     } else {
         locationFailedCallback();
     }
+}
+
+function testMap() {
+    var mapProp = {
+        center: new google.maps.LatLng(-41.295233, 174.773124),
+        zoom: 16,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map = new google.maps.Map(document.getElementById("google-map"), mapProp);
 }
