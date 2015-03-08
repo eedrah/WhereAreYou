@@ -7,7 +7,7 @@ namespace WhereAreYou.Models {
     public class UrlPicker {
         public static string Encode(int i)
         {
-            throw new NotImplementedException();
+            return "AAAA";
         }
     }
 }
